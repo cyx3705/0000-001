@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "template": {
+    "isTemplate": true,
+    "source": "0000-000-Template",
+    "strictValidationArgument": "-Instantiation"
+  },
+  "project": {
+    "id": "0000-001",
+    "name": "AIReady",
+    "title": "OneHistory AI-Ready 项目模板",
+    "kind": [
+      "template",
+      "multidisciplinary"
+    ],
+    "status": "template"
+  },
+  "paths": {
+    "activeRoots": [
+      "b-Office",
+      "b-Code"
+    ],
+    "sourceRoots": [
+      "b-Code"
+    ],
+    "generatedRoots": [],
+    "archiveRoots": [],
+    "allowedRootDirectoryPrefixes": [
+      "a-",
+      "b-",
+      "z-"
+    ]
+  },
+  "documents": {
+    "conventions": "b-Office/现行约定.md"
+  },
+  "commands": {
+    "setup": null,
+    "build": null,
+    "test": null,
+    "verify": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\b-Code\\Test-ProjectContract.ps1",
+    "run": null,
+    "package": null
+  },
+  "externalDependencies": [],
+  "contextExclusions": [
+    "b-Publish/**",
+    "**/bin/**",
+    "**/obj/**",
+    "**/node_modules/**",
+    "**/.vs/**",
+    "artifacts/**"
+  ]
+}
